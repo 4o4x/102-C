@@ -1,0 +1,70 @@
+while(1){
+            
+            number_of_words++;
+            temp1 = (char**)calloc(number_of_words,sizeof(char*));
+
+            for(j=0;j<number_of_words-1;j++) temp1[j] = temp2[j];
+        
+            check = get_string(fp,&temp1[number_of_words-1]);
+
+            if(temp2 != NULL) free(temp2);
+            temp2 = temp1;
+
+            if(!check){
+                templist->words = temp2;
+                templist->number_of_words = number_of_words;
+                templist->chance = 1;
+                temp1 = NULL;
+                temp2 = NULL;
+                break;
+            }
+        
+
+
+//printf("-%s-\n",temp_list->words[3]);
+
+        /*new = new_input_an();
+
+        new->name = temp_list->name;
+
+        //printf("%s",new->name);
+        
+        nofw = temp_list->number_of_words;
+        nofw++;
+        arstr = (char**)calloc(nofw,sizeof(char*));
+        
+        for(j=0;j<nofw;j++) arstr[j] = temp_list->words[j];
+        
+        arstr[nofw-1] = str;
+
+        
+
+        new->words= arstr;
+        new->number_of_words =  nofw ;
+        new->chance = temp_list->chance;
+
+        new->next = temp_list->next;
+        bf->next = new;
+
+        free(temp_list);*/
+
+
+        /*temp_list->number_of_words;
+        
+        arstr = (char**)realloc(arstr,((nofw)+1)*sizeof(char*));
+        nofw++;
+        arstr[nofw-1] = str;
+        temp_list->number_of_words = nofw;
+
+        printf("\n---%s---------\n",arstr[nofw-1]);
+
+
+
+
+
+        
+        /*temp_list->words = (char**)realloc(temp_list->words,((temp_list->number_of_words)+1)*sizeof(char*));
+
+        temp_list->words[temp_list->number_of_words]= str;
+
+        temp_list->number_of_words = temp_list->number_of_words +1;*/
