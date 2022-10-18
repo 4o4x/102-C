@@ -1,6 +1,0 @@
-budget,genre,name,score,year
-30000000,animation,hello,6.1,2000
-unknown,prn,crime story,6.8,1993
-60000000,adventure,hello,6.5,1992
-unknown,comedy,greenfingers,6.9,2000
-50000000,sex,crime story,6.1,2002
